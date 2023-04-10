@@ -1,3 +1,12 @@
+<?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "curriculum";
+
+    $conn = mysqli_connect($host, $user, $pass, $db);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +68,18 @@
                                     <p class="display-5">Michael Eduardo Sandoval Pérez</p>
                                     <p>Programador Jr</p>
                                     <p>Egresado de Ingeniería Informática</p>
+                                    <p>
+                                        <a href="https://twitter.com/Mike__EDD" class="uk-icon-button" uk-icon="twitter"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="instagram"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="tiktok"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="whatsapp"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="discord"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="reddit"></a>
+                                        <a href="https://github.com/mikeed1998" class="uk-icon-button" uk-icon="github"></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -67,14 +88,14 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row py-5">
+            <div class="row mt-5 py-1">
                 <div class="col text-center">
                     <p class="display-5">Habilidades</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start border-end border-dark mt-5">
-                    <h3 class="text-center">Lenguajes de Programación, Diseño y Bases de Datos</h3>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start border-end border-bottom border-dark mt-5">
+                    <h3 class="text-center border">Lenguajes de Programación, Diseño y Bases de Datos</h3>
                     <ul class="list-group">
                         <li class="list-group-item ">
                             <img src="img/python.png" alt="" class="img-fluid" style="width: 32px; height: 32px;">
@@ -168,7 +189,7 @@
                             <img src="img/sql.png" alt="" class="img-fluid" style="width: 32px; height: 32px;">
                             <strong>SQL</strong>
                         </li>
-                        <ul class="mt-0">
+                        <ul class="mt-0 mb-5">
                             <li class="list-group-item">
                                 <img src="img/mysql.png" alt="" class="img-fluid" style="width: 64px; height: 32px;">
                                 MySQL
@@ -180,8 +201,8 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start border-end border-dark mt-5">
-                    <h3 class="text-center mb-5">Software</h3>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start border-end border-bottom border-dark mt-5">
+                    <h3 class="text-center mb-5 border">Software</h3>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <img src="img/git.png" alt="" class="img-fluid" style="width: 32px; height: 32px;">
@@ -215,8 +236,8 @@
                         </ul>
                     </ul>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start mt-5">
-                    <h3 class="text-center mb-5">Otros Conocimientos</h3>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-start border-bottom border-dark mt-5">
+                    <h3 class="text-center mb-5 border">Otros Conocimientos</h3>
                     <ul class="list-group">
                         <li class="list-group-item"><strong>Metodogias Secuenciales</strong></li>
                         <ul class="mt-0">
@@ -235,94 +256,111 @@
             </div>
         </div>
 
-        <div class="container-fluid py-5 mt-5">
-            <div class="row">
-                <div class="col text-center py-5">
-                    <div class="display-3">Portafolio</div>
-                </div>
-            </div>
-            <div class="row">
-                <div uk-filter="target: .js-filter; animation: fade">
-                    <div class="col-xl-6 col-lg-6 col-md-9 col-sm-12 col-xs-12 mx-auto">
-                    <ul class="uk-subnav uk-subnav-pill">
-                        <li uk-filter-control=".proyectos_escuela"><a href="#"><strong>Proyectos escolares</strong></a></li>
-                        <li uk-filter-control=".proyectos_empresas"><a href="#"><strong>Proyectos profesionales</strong></a></li>
-                        <li uk-filter-control=".proyectos_independientes"><a href="#"><strong>Proyectos independientes</strong></a></li>
-                    </ul>
-                    </div>
-                    <ul class="js-filter uk-child-width-1-1 uk-child-width-1-1@m uk-text-center" uk-grid>
-                        <li class="proyectos_escuela">
-                            <div class="uk-card uk-card-default uk-card-body">
-                                <div id="escuela">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-9 mx-auto">
-                                                <div class="row">
-                                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 border py-3">
-                                                        <h1>Reptilia Auxiliar</h1>
-                                                    </div>
-                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12 border py-3">
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item">
-                                                                <h3>Frontend</h3>
-                                                                <ul class="mt-0">
-                                                                    <li class="list-group-item">HTML5 y CSS (Bootstrap)</li>
-                                                                    <li class="list-group-item">Python (Jinja2)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <ul class="list-group">
-                                                            <li class="list-group-item">
-                                                                <h3>Backend</h3>
-                                                                <ul class="mt-0">
-                                                                <li class="list-group-item">Python (Flask y colab para el deep learning)</li>
-                                                                    <li class="list-group-item">MySQL</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border py-3">
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <h3>Funciones</h3>
+        <?php
+            $sql_categorias = "SELECT * FROM categorias";
+            $categorias = mysqli_query($conn, $sql_categorias);
+            
+                echo "
+                    <div class='container-fluid py-5 mt-5'>
+                        <div class='row'>
+                            <div class='col text-center py-5'>
+                                <div class='display-3'>Portafolio</div>
+                            </div>
+                        </div>
+                        <div class='row'>           
+                            <div uk-filter='target: .js-filter; animation: fade'>
+                                <div class='col-xl-6 col-lg-6 col-md-9 col-sm-12 col-xs-12 mx-auto text-center'>
+                                    <ul class='uk-subnav uk-subnav-pill'>
+                    ";
+                        
+                    
+                    while($row = $categorias->fetch_assoc()) {
+                        echo "
+                                        <li uk-filter-control='.proyectos_". $row['id'] ."'><a href='#'>". $row['categoria'] ."</strong></a></li>
+                            ";
+                    }
+                    
+                    echo "  
+                                    </ul>
+                                </div>
+                                <ul class='js-filter uk-child-width-1-1 uk-child-width-1-1@m uk-text-center' uk-grid>
+                        ";
+                    
+                    $sql_categorias2 = "SELECT * FROM categorias";
+                    $categorias2 = mysqli_query($conn, $sql_categorias2);
+                    while($row2 = $categorias2->fetch_assoc()) {
+                        echo "
+                                    <li class='proyectos_". $row2['id'] ."'>
+                                        <div class='uk-card uk-card-body'>
+                                            <div class='carrusel_proyectos'>
+                            ";
+
+                        $sql_proyectos = "SELECT * FROM proyecto";
+                        $proyectos = mysqli_query($conn, $sql_proyectos);
+                        while($subrow = $proyectos->fetch_assoc()) {
+                            if($row2['id'] == $subrow['categoria']) {
+                                echo "
+                                                <div>
+                                                    <div class='row'>
+                                                        <div class='col-9 mx-auto'>
+                                                            <div class='row'>
+                                                                <div class='col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 border py-3'>
+                                                                    <h2>". $subrow['nombre'] ."</h2>
+                                                                    <h3>". $subrow['origen'] ."</h3>
+                                                                    <a href='". $subrow['enlace'] ."' class='mt-5 mb-5 btn btn-block btn-outline border border-dark'>Ver</a>
+                                                                </div>
+                                                                <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 border py-3'>
+                                                                    <ul class='list-group'>
+                                                                        <li class='list-group-item'>
+                                                                            <h3>Frontend</h3>
+                                                                            <ul class='mt-0'>
+                                                                                <li class='list-group-item'>". $subrow['front'] ."</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <ul class='list-group'>
+                                                                        <li class='list-group-item'>
+                                                                            <h3>Backend</h3>
+                                                                            <ul class='mt-0'>
+                                                                                <li class='list-group-item'>". $subrow['back'] ."</li>
+                                                                             </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 border py-3'>
+                                                                    <div class='row'>
+                                                                        <div class='col'>
+                                                                            <h3>Funciones</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class='row'>
+                                                                        <div class='col'>
+                                                                            ". $subrow['descripcion'] ."
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                Proyecto modular que complementa tres areas de la carrera de Ingeniería Informática, consiste en un proyecto de divulgación en el area de la herpetología cuyo diferenciador es la implementación de un modulo de búsqueda inteligente por imágenes el cual se basa en una técnica de Deep Learning llamada red neuronal convolucional
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12 border">
-                                                        <a href="https://github.com/mikeed1998/ReptiliaAuxiliar/tree/master" class="mt-5 mb-5 btn btn-block btn-outline border border-dark">Ver</a>
                                                     </div>
                                                 </div>
+                                ";
+                            }     
+                        }
+
+                            echo "
                                             </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        b
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="proyectos_empresas">
-                            <div class="uk-card uk-card-primary uk-card-body">
-                                carrusel
-                            </div>
-                        </li>
-                        <li class="proyectos_independientes">
-                            <div class="uk-card uk-card-secondary uk-card-body">
-                                carrusel
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                                    </li>
+                            ";
+                    }
 
-        
-
+                    echo "
+                                </ul>
+                            </div>
+                        </div>
+                    </div>";
+                
+        ?>
 
         <div class="container-fluid border py-5">
             <div class="row py-5">
@@ -385,452 +423,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row py-5">
-                <div class="col text-center">
-                    <p class="display-6">Proyectos</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Nombre
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Programado/diseñado en
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Parte de
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Descripción de las actividades realizadas
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    Ver proyecto
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Reptilia Auxiliar
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>HTML5 y CSS (Bootstrap)</li>
-                                <li>Python (Jinja2)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>Python (Flask y colab para el deep learning)</li>
-                                <li>MySQL</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Proyecto universitario 
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Proyecto modular que complementa tres areas de la carrera de Ingeniería Informática, consiste en un proyecto de divulgación en el area de la herpetología cuyo diferenciador es la implementación de un modulo de búsqueda inteligente por imágenes el cual se basa en una técnica de Deep Learning llamada red neuronal convolucional
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://github.com/mikeed1998/ReptiliaAuxiliar/tree/master" class="btn btn-outline border border-dark">Reptilia Auxiliar</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    MiPielEsOro
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño de un proyecto ya creado por la empresa, como parte de las practicas relacionadas con el intership
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">MiPielEsOro</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    RedTowers
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño de un proyecto nuevo de la empresa, como parte del intership pero esta vez con un proyecto real, permitiendonos unicamente la manipulación del diseño
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">RedTowers</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Morones Brokers
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño de un proyecto cancelado por el cliente pero cuyos diseños fueron reutilizados con fines de practica para el intership.
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">Morones Brokers</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    APF - Colegio Alemán de Guadalajara
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Nativo)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño y programación de un proyecto nuevo de la empresa, este fue el ultimo proyecto formando parte del intership y la primera vez que trabaje con el Front y Back.
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://wozialads.com/APF" class="btn btn-outline border border-dark">APF</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Dinero Organico
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño de un proyecto
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://wozialads.com/DineroOrganico" class="btn btn-outline border border-dark">Dinero Organico</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Takasami
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Laravel)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño y programación del proyecto para la empresa.
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://proyectoswozial.com/Takasami" class="btn btn-outline border border-dark">Takasami</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    MercaBella
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Nativo)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Actualización y corrección de errores tanto en el diseño como en la lógica de un proyecto ya entregado al cliente
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://mercabella.com/" class="btn btn-outline border border-dark">MercaBella</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Noz Mudamos
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Bootstrap y UIKit)
-                                </li>
-                                <li>
-                                    JavaScript (ReactJS)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    <ul>
-                        <li>Wozial Marketing Lovers</li>
-                        <li>Codenation</li>
-                    </ul>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Actualización y corrección de errores en los componentes de un proyecto extremadamente robusto en el cual colaboramos miembros de ambas empresas
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">Noz Mudamos</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    CasaPiel
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Booststrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Nativo)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Actualización y corrección de errores tanto en el diseño como en la programación de un proyecto ya entregado al cliente
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="https://casapiel.com.mx/es/" class="btn btn-outline border border-dark">CasaPiel</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Breca
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Booststrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Laravel)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño y programación de un proyecto para la empresa.
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">Breca</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    Industrias Valore
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-xs-12 border">
-                    <ul>
-                        <li>
-                            Frontend
-                            <ul>
-                                <li>
-                                    HTML y CSS3 (Booststrap y UIKit)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            Backend
-                            <ul>
-                                <li>
-                                    PHP (Laravel)
-                                </li>
-                                <li>
-                                    JavaScript (JQuery, AJAX)
-                                </li>
-                                <li>
-                                    MySQL
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12 border">
-                    Wozial Marketing Lovers
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 border">
-                    Maquetación del diseño y programación del proyecto para la empresa.
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 col-xs-12 border">
-                    <a href="" class="btn btn-outline border border-dark">Breca</a>
-                </div>
-            </div>
-        </div>
+        
     </main>
 
 
@@ -847,12 +440,13 @@
     <!-- General -->
     <script type="text/javascript" src="js/main.js"></script>
     <script>      
-        $('#escuela').slick({
+        $('.carrusel_proyectos').slick({
             dots: true,
             infinite: false,
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: true,
             responsive: [
             {
                 breakpoint: 1024,
